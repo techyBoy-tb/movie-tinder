@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "17615649211",
+    "project_id": "movie-tinder-da40c",
+    "storage_bucket": "movie-tinder-da40c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17615649211:android:e55cf54002b290f1102c9e",
+        "android_client_info": {
+          "package_name": "org.movie_tinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17615649211-fd4d0jo6m0gu52v0g5m4i3d5rdvsuhv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoFoaZiDgiG9ZewG-53UekHNfjcpwBnNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17615649211-fd4d0jo6m0gu52v0g5m4i3d5rdvsuhv4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "17615649211-n1ug90m34f4r3btbfniqla5k8h9c35vc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.movie-tinder"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
