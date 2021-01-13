@@ -27,7 +27,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
 
     final debounceStream = events.where((event) {
       return (event is EmailChanged || event is PasswordChanged);
-    }).debounceTime(Duration(milliseconds: 300));
+    }).debounceTime(Duration(milliseconds: 3000));
 
     return super.transformEvents(nonDebounceSteam.mergeWith([debounceStream]), next);
   }
