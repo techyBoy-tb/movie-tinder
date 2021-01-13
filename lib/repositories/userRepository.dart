@@ -39,7 +39,7 @@ class UserRepository {
   }
 
   Future<String> getUser() async {
-    return await _firebaseAuth.currentUser.uid;
+    return _firebaseAuth.currentUser.uid;
   }
   
   // Profile setup

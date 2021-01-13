@@ -12,7 +12,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
   final UserRepository _userRepository;
 
-  AuthBloc({@required UserRepository userRepository}):assert(userRepository != null), _userRepository = userRepository;
+  AuthBloc({@required UserRepository userRepository}) : assert(userRepository != null), _userRepository = userRepository;
 
   @override
   AuthState get initialState => Uninitialised();
