@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
           child: Text(
             "Movie-Tinder: Match it, watch it!",
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: size.width * 0.2
             )
           )
