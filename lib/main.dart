@@ -6,7 +6,7 @@ import 'package:movie_tinder/ui/screens/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   BlocSupervisor.delegate = SimpleBlocDelegate();
 
   runApp(Home());

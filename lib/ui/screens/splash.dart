@@ -12,10 +12,11 @@ class SplashScreen extends StatelessWidget {
         width: size.width,
         child: Center(
           child: Text(
-            "Movie-Tinder: Match it, watch it!",
+            "Movie Tinder: Match it, watch it!",
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white,
-              fontSize: size.width * 0.2
+              fontSize: size.width * 0.1
             )
           )
         )
