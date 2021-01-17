@@ -194,17 +194,17 @@ class _ProfileFormState extends State<ProfileForm> {
                         children: <Widget> [
                           genderWidget(FontAwesomeIcons.venus, "Female", size, gender, () {
                             setState(() {
-                              gender = "female";
+                              gender = "Female";
                             });
                           }),
                           genderWidget(FontAwesomeIcons.mars, "Male", size, gender, () {
                             setState(() {
-                              gender = "male";
+                              gender = "Male";
                             });
                           }),
                           genderWidget(FontAwesomeIcons.transgender, "Trans/Other", size, gender, () {
                             setState(() {
-                              gender = "trans";
+                              gender = "Trans/Other";
                             });
                           }),
                         ],
@@ -224,17 +224,17 @@ class _ProfileFormState extends State<ProfileForm> {
                         children: <Widget> [
                           genderWidget(FontAwesomeIcons.venus, "Female", size, interestedIn, () {
                             setState(() {
-                              interestedIn = "female";
+                              interestedIn = "Female";
                             });
                           }),
                           genderWidget(FontAwesomeIcons.mars, "Male", size, interestedIn, () {
                             setState(() {
-                              interestedIn = "male";
+                              interestedIn = "Male";
                             });
                           }),
                           genderWidget(FontAwesomeIcons.transgender, "Trans/Other", size, interestedIn, () {
                             setState(() {
-                              interestedIn = "trans";
+                              interestedIn = "Trans/Other";
                             });
                           }),
                         ],
@@ -251,7 +251,7 @@ class _ProfileFormState extends State<ProfileForm> {
                       },
                       child: Container(
                         width: size.width * 0.8,
-                        height: size.height * 0.6,
+                        height: size.height * 0.06,
                         decoration: BoxDecoration(
                           color: isButtonEnabled(state) ? Colors.white : Colors.grey,
                           borderRadius: BorderRadius.circular(size.height * 0.05),
@@ -259,7 +259,7 @@ class _ProfileFormState extends State<ProfileForm> {
                         child: Center(
                           child: Text(
                               "Create my profile",
-                              style: TextStyle(fontSize: size.height * 0.25, color: Colors.blue)),
+                              style: TextStyle(fontSize: size.height * 0.025, color: Colors.blue)),
                         ),
                       ),
                     ),
@@ -276,7 +276,7 @@ class _ProfileFormState extends State<ProfileForm> {
 
 Widget textFieldWidget(controller, text, size) {
   return Padding(
-    padding: EdgeInsets.all(size.height * 0.2),
+    padding: EdgeInsets.all(size.height * 0.02),
     child: TextField(
       controller: controller,
       decoration: InputDecoration(
