@@ -1,11 +1,9 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movie_tinder/bloc/auth/auth_bloc.dart';
 import 'package:movie_tinder/repositories/userRepository.dart';
 import 'package:movie_tinder/ui/screens/login.dart';
 import 'package:movie_tinder/ui/screens/profile.dart';
-import 'package:movie_tinder/ui/screens/signUp.dart';
 import 'package:movie_tinder/ui/screens/splash.dart';
 import 'package:movie_tinder/ui/widgets/tabs.dart';
 
@@ -71,7 +69,7 @@ class Home extends StatelessWidget {
           if (state is Uninitialised) {
             return SplashScreen();
           } else if (state is Authenticated) {
-            return Tabs();
+            return Tabs(userId: state.userId);
           } else if (state is AuthenticatedButNotSet) {
             return Profile(
               userRepository: _userRepository,

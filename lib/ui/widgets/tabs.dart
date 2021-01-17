@@ -7,10 +7,14 @@ import 'package:movie_tinder/ui/screens/messages.dart';
 import 'package:movie_tinder/ui/screens/searches.dart';
 
 class Tabs extends StatelessWidget {
+  final userId;
+
+  Tabs({this.userId});
+
   @override
   Widget build(BuildContext context) {
     List<Widget> pages = [
-      Searches(),
+      Searches(userId: userId),
       Matches(),
       Messages()
     ];

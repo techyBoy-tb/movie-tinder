@@ -7,7 +7,7 @@ abstract class SearchEvent extends Equatable {
 
 class LoadUserEvent extends SearchEvent {
   final String userId;
-  LoadUserEvent(this.userId);
+  LoadUserEvent({this.userId});
 
   @override
   List<Object> get props => [userId];
@@ -15,7 +15,7 @@ class LoadUserEvent extends SearchEvent {
 
 class LoadedUserEvent extends SearchEvent {
   final String userId;
-  LoadedUserEvent(this.userId);
+  LoadedUserEvent({this.userId});
 
   @override
   List<Object> get props => [userId];
@@ -23,7 +23,7 @@ class LoadedUserEvent extends SearchEvent {
 
 class SelectUserEvent extends SearchEvent {
   final String currentUserId, selectedUserId, selectedName, photoUrl;
-  SelectUserEvent(this.currentUserId, this.selectedUserId, this.selectedName, this.photoUrl);
+  SelectUserEvent({this.currentUserId, this.selectedUserId, this.selectedName, this.photoUrl});
 
   @override
   List<Object> get props => [currentUserId, selectedUserId, selectedName, photoUrl];

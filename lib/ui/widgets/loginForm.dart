@@ -33,7 +33,7 @@ class _LoginFormState extends State<LoginForm> {
   void initState() {
     _loginBloc = BlocProvider.of<LoginBloc>(context);
 
-    _emailController.addListener(_onEmailChanged);
+    // _emailController.addListener(_onEmailChanged);
     _passwordController.addListener(_onPasswordChanged);
     super.initState();
   }
