@@ -44,7 +44,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     } else  if (event is LoginWithCredentials) {
       yield* _mapLoginWithCredsToState(
           email: event.email,
-          password: event.email);
+          password: event.password);
     }
   }
 
@@ -58,6 +58,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
 
   Stream<LoginState> _mapLoginWithCredsToState({String email, String password}) async* {
     yield LoginState.loading();
+    print('Logging in with creds -  email: $email password: $password');
     try {
       await _userRepository.signInWithEmail(email, password);
       yield LoginState.success();

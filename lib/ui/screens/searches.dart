@@ -27,7 +27,7 @@ class _SearchesState extends State<Searches> {
 
   Future<int> getDifference(GeoPoint userLocation) async {
     Position currentPosition = await Geolocator.getCurrentPosition();
-    double location = await Geolocator.distanceBetween(userLocation.longitude, userLocation.longitude, currentPosition.latitude, currentPosition.longitude);
+    double location = Geolocator.distanceBetween(userLocation.longitude, userLocation.longitude, currentPosition.latitude, currentPosition.longitude);
     locationDifference = location.toInt();
   }
 

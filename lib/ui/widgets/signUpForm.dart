@@ -29,7 +29,7 @@ class _SignUpFormState extends State<SignUpForm> {
 
   @override
   void initState() {
-    // _signUpBloc = BlocProvider.of<SignUpBloc>(context);
+    _signUpBloc = BlocProvider.of<SignUpBloc>(context);
 
     _emailController.addListener(_onEmailChanged);
     _passwordController.addListener(_onPasswordChanged);

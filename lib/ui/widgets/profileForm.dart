@@ -34,7 +34,7 @@ class _ProfileFormState extends State<ProfileForm> {
   GeoPoint location;
   ProfileBloc _profileBloc;
 
-  UserRepository get _userRepository => widget._userRepository;
+  // UserRepository get _userRepository => widget._userRepository;
   bool get isPopulated => _nameController.text.isNotEmpty && gender !=null
       && interestedIn !=null && age !=null && photo !=null;
 

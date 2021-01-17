@@ -1,7 +1,5 @@
-import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:movie_tinder/models/user.dart';
 
 class SearchRepository {
