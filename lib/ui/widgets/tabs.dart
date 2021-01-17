@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:movie_tinder/bloc/auth/auth_bloc.dart';
 import 'package:movie_tinder/ui/constants.dart';
 import 'package:movie_tinder/ui/screens/matches.dart';
 import 'package:movie_tinder/ui/screens/messages.dart';
@@ -34,7 +36,7 @@ class Tabs extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.exit_to_app),
                 onPressed: () {
-
+                  BlocProvider.of<AuthBloc>(context).add(LoggedOut());
                 },
               ),
             ],
