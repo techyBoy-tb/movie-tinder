@@ -43,7 +43,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     } else  if (event is SignUpWithCredentials) {
       yield* _mapSignUpWithCredsToState(
           email: event.email,
-          password: event.email);
+          password: event.password);
     }
   }
 
@@ -61,6 +61,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
       await _userRepository.signUpWithEmail(email, password);
       yield SignUpState.success();
     } catch (_) {
+      print(_);
       yield SignUpState.failure();
     }
   }
